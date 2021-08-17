@@ -1,0 +1,8 @@
+util.AddNetworkString("Quest:Load")
+util.AddNetworkString("Quest:Storyline:New")
+util.AddNetworkString("Quest:Storyline:Active")
+util.AddNetworkString("Quest:Storyline:SetActive")
+util.AddNetworkString("Quest:Quest:Complete")
+util.AddNetworkString("Quest:Quest:Update")
+util.AddNetworkString("Quest:Quest:New")
+util.AddNetworkString("Quest:Quest:Progress")

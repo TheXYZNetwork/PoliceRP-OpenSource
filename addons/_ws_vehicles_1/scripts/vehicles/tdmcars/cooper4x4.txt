@@ -1,0 +1,257 @@
+// cooper4x4, created by TDM in 03/31/14 23:45:29, using Vehicle Controller (VCMod).
+
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"0.8"
+		"MassCenterOverride"	"0 8 10"
+		"MassOverride"			"2050"
+		"AddGravity"			"0.5"
+		"MaxAngularVelocity"	"750"
+	}
+	"Engine"
+	{
+		"HorsePower"			"190"
+		"MaxRPM"				"3000"
+		"MaxSpeed"				"47"
+		"MaxReverseSpeed"		"15"
+		"AutobrakeSpeedGain"	"0"
+		"AutobrakeSpeedFactor"	"0"
+		"Autotransmission"		"1"
+		"AxleRatio"				"7"
+		"Gear"					"3"
+
+		"ShiftUpRPM"			"1000"
+		"ShiftDownRPM"			"500"
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"40"
+		"DegreesFast"						"13"
+		"DegreesBoost"						"11"
+		"FastDampen"						"100"
+		"SteeringExponent"					"0"
+		"SlowCarSpeed"						"14"
+		"FastCarSpeed"						"60"
+		"SlowSteeringRate"					"3"
+		"FastSteeringRate"					"2"
+		"SteeringRestRateSlow"				"3"
+		"SteeringRestRateFast"				"2"
+		"TurnThrottleReduceSlow"			"0.01"
+		"TurnThrottleReduceFast"			"0.9"
+		"BrakeSteeringRateFactor"			"3"
+		"ThrottleSteeringRestRateFactor"	"2"
+		"BoostSteeringRestRateFactor"		"1.7"
+		"BoostSteeringRateFactor"			"1.7"
+
+		"PowerSlideAccel"					"250"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"22"
+			"Mass"							"350"
+			"Inertia"						"0"
+			"Damping"						"0.2"
+			"RotDamping"					"0"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"brakingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"28"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"2.3"
+			"MaxBodyForce"					"68"
+		}
+		"TorqueFactor"						"1.3"
+		"BrakeFactor"						"0.4"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"22"
+			"Mass"							"450"
+			"Inertia"						"0"
+			"Damping"						"0.5"
+			"RotDamping"					"0"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"brakingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"20"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"2.3"
+			"MaxBodyForce"					"65"
+		}
+		"TorqueFactor"						"1.3"
+		"BrakeFactor"						"0.6"
+	}
+}
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.06"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.3"
+		"Speed_Approach_Factor"	"0.08"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.45"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.6"
+		"Speed_Approach_Factor"	"0.035"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"1"
+		"Speed_Approach_Factor"	"0.01"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN_WATER"
+		"Sound"		"atv_stall_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2_RESUME"
+		"Sound"		"vehicles\tdmcars\defender\noshift.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_START_WATER"
+		"Sound"		"atv_start_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3_RESUME"
+		"Sound"		"vehicles\tdmcars\defender\noshift.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_REVERSE"
+		"Sound"		"vehicles\tdmcars\defender\rev.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_IDLE"
+		"Sound"		"vehicles\tdmcars\defender\idle.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1_RESUME"
+		"Sound"		"vehicles\tdmcars\defender\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4"
+		"Sound"		"vehicles\tdmcars\defender\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1"
+		"Sound"		"vehicles\tdmcars\defender\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN_HIGHSPEED"
+		"Sound"		"vehicles\tdmcars\defender\throttle_off.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN"
+		"Sound"		"vehicles\tdmcars\slsamg\engineoff.mp3"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_START_IDLE"
+		"Sound"		"vehicles\tdmcars\defender\enginestart.mp3"
+		"Min_Time"	"0.6"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4_RESUME"
+		"Sound"		"vehicles\tdmcars\defender\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3"
+		"Sound"		"vehicles\tdmcars\defender\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0_RESUME"
+		"Sound"		"vehicles\tdmcars\defender\first.wav"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0"
+		"Sound"		"vehicles\tdmcars\defender\rev.wav"
+		"Min_Time"	"0.08"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2"
+		"Sound"		"vehicles\tdmcars\defender\second.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN"
+		"Sound"		"vehicles\tdmcars\defender\idle.wav"
+		"Min_Time"	"0"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+		"Gear_Limit"		"0"
+	}
+
+	"Skid_LowFriction"		""
+	"Skid_NormalFriction"	""
+	"Skid_HighFriction"		""
+}

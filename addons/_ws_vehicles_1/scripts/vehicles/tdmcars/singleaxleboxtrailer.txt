@@ -1,0 +1,278 @@
+"vehicle"
+{
+	"wheelsperaxle"	"2"
+	"body"
+	{
+		"countertorquefactor"	"0"
+		"massCenterOverride"	"0 10.962 98.607"
+		"massoverride"		"12000"		// kg
+		"addgravity"		"0.33"
+		"maxAngularVelocity"	"720"
+	}
+	"engine"
+	{
+		"horsepower"		"0"
+		"maxrpm"		"1500"
+		"maxspeed"		"65"		// mph
+		"maxReverseSpeed"	"20"		// mph
+		"autobrakeSpeedGain"	"1.1"		// 10% speed gain while coasting, put on the brakes after that
+		"autobrakeSpeedFactor"	"3.0"		// Brake is this times the speed gain
+		"autotransmission"	"1"
+		"axleratio"		"4.56"
+		"gear"			"3.2"		// 1st gear
+
+		"shiftuprpm"		"1500"
+		"shiftdownrpm"		"500"
+	
+		"boost"
+		{
+//			"force"		"1.5"	// 1.5 car body mass * gravity * inches / second ^ 2
+			"duration"	"2.0"	// 1 second of boost
+			"delay"		"0"	// 15 seconds before you can use it again
+			"torqueboost"	"1.1"	// enable "sprint" mode of vehicle, not	force type booster			
+			"maxspeed"	"70"	// maximum turbo speed
+			"force"		"1.5"	// use for value as a boost factor
+		}
+	}
+	"steering"
+	{
+		"degreesSlow"		"0"	// steering cone at zero to slow speed
+		"degreesFast"		"0"	// steering cone at fast speed to max speed
+		"degreesBoost"		"0"	// steering cone at max boost speed (blend toward this after max speed)
+		"steeringExponent"	"1.4"	// steering function is linear, then raised to this power to be slower at the beginning of the curve, faster at the end
+		"slowcarspeed"		"20"
+		"fastcarspeed"		"40"
+		"slowSteeringRate"	"4.0"		
+		"fastSteeringRate"	"2.0"
+		"steeringRestRateSlow"	"4.0"
+		"steeringRestRateFast"	"2.0"
+		"turnThrottleReduceSlow" "0.5"
+		"turnThrottleReduceFast" "2.0"
+		"brakeSteeringRateFactor"	"6"
+		"throttleSteeringRestRateFactor"	"2"
+		"boostSteeringRestRateFactor"	"1.7"
+		"boostSteeringRateFactor"	"1.7"
+
+		"powerSlideAccel"	"250"
+
+		"skidallowed"		"1"
+		"dustcloud"		"1"
+
+	}
+	// front axle
+	"axle"
+	{
+		"wheel"
+		{
+			"radius"	"20.5"
+			"mass"		"300"
+			"inertia"	"1.0"		// steady the car (fixes the oscillation of the axles about z)
+			"damping"	"0"
+			"rotdamping"	"0.2"
+                        "material"      "jeeptire"
+                        "skidmaterial"  "slidingrubbertire"
+                        "brakematerial" "brakingrubbertire"
+		}
+		"suspension"
+		{
+			"springConstant"		"60"
+			"springDamping"			"0.5"
+			"stabilizerConstant"		"20"
+			"springDampingCompression"	"5"
+			"maxBodyForce"			"100"
+		}
+
+		"torquefactor"	"0.0"
+		"brakefactor"	"0.5"
+	}
+
+
+	// rear axle
+	"axle"
+	{
+		"wheel"
+		{
+			"radius"	"20.5"
+			"mass"		"300"
+			"inertia"	"1.0"		// steady the car (fixes the oscillation of the axles about z)
+			"damping"	"0"
+			"rotdamping"	"0.2"
+                        "material"      "jeeptire"
+                        "skidmaterial"  "slidingrubbertire"
+                        "brakematerial" "brakingrubbertire"
+		}
+		"suspension"
+		{
+			"springConstant"		"60"
+			"springDamping"			"0.5"
+			"stabilizerConstant"		"20"
+			"springDampingCompression"	"5"
+			"maxBodyForce"			"100"
+		}
+		"torquefactor"	"0.0"
+		"brakefactor"	"0.5"
+	}
+}
+
+"vehicle_sounds"
+{
+	// List gears in order from lowest speed to highest speed
+
+	"gear"
+	{
+		"max_speed"		"0.05"
+		"speed_approach_factor" "1.0"
+	}
+
+	"gear"
+	{
+		"max_speed"		"0.2"
+		"speed_approach_factor" "0.07"
+	}
+	"gear"
+	{
+		"max_speed"		"0.5"
+		"speed_approach_factor" "0.07"
+	}
+	"gear"
+	{
+		"max_speed"		"0.70"
+		"speed_approach_factor" "0.035"
+	}
+	"gear"
+	{
+		"max_speed"		"0.85"
+		"speed_approach_factor" "0.015"
+	}
+	"gear"
+	{
+		"max_speed"		"2.0"
+		"speed_approach_factor" "0.03"
+	}
+	"state"
+	{
+		"name"		"SS_START_WATER"
+		"sound"		"Clydesdale_engine_null"
+	}
+
+	"state"
+	{
+		"name"		"SS_START_IDLE"
+		"sound"		"Clydesdale_engine_null"
+	}
+	"state"
+	{
+		"name"		"SS_SHUTDOWN_WATER"
+		"sound"		"Clydesdale_engine_null"
+	}
+	"state"
+	{
+		"name"		"SS_IDLE"
+		"sound"		"Clydesdale_engine_null"
+	}
+	"state"
+	{
+		"name"		"SS_REVERSE"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_0"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.75"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_0_RESUME"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.75"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_1"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_1_RESUME"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_2"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"1.25"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_2_RESUME"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_3"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_3_RESUME"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_4"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_4_RESUME"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_SLOWDOWN_HIGHSPEED"
+		"sound"		"Clydesdale_engine_null"
+	}
+	"state"
+	{
+		"name"		"SS_SLOWDOWN"
+		"sound"		"Clydesdale_engine_null"
+	}
+	"state"
+	{
+		"name"		"SS_TURBO"
+		"sound"		"Clydesdale_engine_null"
+		"min_time"	"2.5"
+	}
+	"state"
+	{
+		"name"		"SS_SHUTDOWN"
+		"sound"		"Clydesdale_engine_null"
+	}
+	"crashsound"
+	{
+		"min_speed"			"350"
+		"min_speed_change"	"250"
+		"sound"				"ATV_impact_medium"
+		"gear_limit"		"1"
+	}
+	"crashsound"
+	{
+		"min_speed"			"450"
+		"min_speed_change"	"350"
+		"sound"				"ATV_impact_heavy"
+	}
+
+	
+	"skid_lowfriction"		"ATV_skid_lowfriction"
+	"skid_normalfriction"	"ATV_skid_normalfriction"
+	"skid_highfriction"		"ATV_skid_highfriction"
+}

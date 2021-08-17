@@ -1,0 +1,1 @@
+CustomizableWeaponry:addFireSound("MP153_FIRE", {"weapons/mp153/fire1.wav","weapons/mp153/fire2.wav","weapons/mp153/fire3.wav"}, 1, 125, CHAN_STATIC)

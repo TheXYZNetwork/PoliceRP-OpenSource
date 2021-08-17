@@ -1,0 +1,252 @@
+// jeewillys, created by TDM in 10/13/14 00:51:59, using Vehicle Controller (VCMod).
+
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"0.9"
+		"MassCenterOverride"	"0 -4 -2"
+		"MassOverride"			"1040"
+		"AddGravity"			"0.55"
+		"MaxAngularVelocity"	"720"
+	}
+	"Engine"
+	{
+		"HorsePower"			"60"
+		"MaxRPM"				"2500"
+		"MaxSpeed"				"55"
+		"MaxReverseSpeed"		"16"
+		"AutobrakeSpeedGain"	"1.1"
+		"AutobrakeSpeedFactor"	"3"
+		"Autotransmission"		"0"
+		"AxleRatio"				"7.5"
+		"Gear"					"3.2"
+
+		"ShiftUpRPM"			"3800"
+		"ShiftDownRPM"			"1600"
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"30"
+		"DegreesFast"						"9"
+		"DegreesBoost"						"11"
+		"FastDampen"						"80"
+		"SteeringExponent"					"0"
+		"SlowCarSpeed"						"2"
+		"FastCarSpeed"						"50"
+		"SlowSteeringRate"					"2.9"
+		"FastSteeringRate"					"1.7"
+		"SteeringRestRateSlow"				"2.9"
+		"SteeringRestRateFast"				"1.7"
+		"TurnThrottleReduceSlow"			"0.01"
+		"TurnThrottleReduceFast"			"0.6"
+		"BrakeSteeringRateFactor"			"2.9"
+		"ThrottleSteeringRestRateFactor"	"1.7"
+		"BoostSteeringRestRateFactor"		"1.7"
+		"BoostSteeringRateFactor"			"1.7"
+
+		"PowerSlideAccel"					"250"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"19"
+			"Mass"							"220"
+			"Inertia"						"0.6"
+			"Damping"						"0"
+			"RotDamping"					"0.3"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"45"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"4"
+			"MaxBodyForce"					"26"
+		}
+		"TorqueFactor"						"0.55"
+		"BrakeFactor"						"0.5"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"19"
+			"Mass"							"190"
+			"Inertia"						"0.8"
+			"Damping"						"0"
+			"RotDamping"					"0.8"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"50"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"4"
+			"MaxBodyForce"					"30"
+		}
+		"TorqueFactor"						"0.65"
+		"BrakeFactor"						"0.5"
+	}
+}
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.06"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.36"
+		"Speed_Approach_Factor"	"0.08"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.6"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.6"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN_WATER"
+		"Sound"		"atv_stall_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2_RESUME"
+		"Sound"		"vehicles\tdmcars\willys\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_START_WATER"
+		"Sound"		"atv_start_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3_RESUME"
+		"Sound"		"vehicles\tdmcars\willys\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_REVERSE"
+		"Sound"		"vehicles\tdmcars\willys\rev.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_IDLE"
+		"Sound"		"vehicles\tdmcars\willys\idle.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1_RESUME"
+		"Sound"		"vehicles\tdmcars\willys\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4"
+		"Sound"		"vehicles\tdmcars\willys\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1"
+		"Sound"		"vehicles\tdmcars\willys\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN_HIGHSPEED"
+		"Sound"		"vehicles\tdmcars\willys\throttle_off.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN"
+		"Sound"		"vehicles\tdmcars\slsamg\engineoff.mp3"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_START_IDLE"
+		"Sound"		"vehicles\tdmcars\willys\enginestart.mp3"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4_RESUME"
+		"Sound"		"vehicles\tdmcars\willys\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3"
+		"Sound"		"vehicles\tdmcars\willys\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0_RESUME"
+		"Sound"		"vehicles\tdmcars\willys\first.wav"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0"
+		"Sound"		"vehicles\tdmcars\willys\idle.wav"
+		"Min_Time"	"0.08"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2"
+		"Sound"		"vehicles\tdmcars\willys\second.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN"
+		"Sound"		"vehicles\tdmcars\willys\idle.wav"
+		"Min_Time"	"0"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+		"Gear_Limit"		"0"
+	}
+
+	"Skid_LowFriction"		""
+	"Skid_NormalFriction"	""
+	"Skid_HighFriction"		""
+}

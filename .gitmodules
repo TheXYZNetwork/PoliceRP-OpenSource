@@ -1,0 +1,12 @@
+[submodule "addons/lite_tools"]
+	path = addons/lite_tools
+	url = https://github.com/TheXYZNetwork/lite-tools
+[submodule "addons/simp_sit"]
+	path = addons/simp_sit
+	url = https://github.com/TheXYZNetwork/SIMPSit
+[submodule "addons/pcasino_legal"]
+	path = addons/pcasino_legal
+	url = https://github.com/owainjones74/pCasino-Legal
+[submodule "addons/bad_coderz"]
+	path = addons/bad_coderz
+	url = https://github.com/ExtReMLapin/BadCoderz.git

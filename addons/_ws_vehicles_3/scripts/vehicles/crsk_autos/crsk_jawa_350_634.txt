@@ -1,0 +1,271 @@
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"0.75"
+		"MassCenterOverride"	"0 -10 -2"
+		"MassOverride"			"1000"
+		"AddGravity"			"2.99"
+		"MaxAngularVelocity"	"120"
+	}
+	"Engine"
+	{
+		"HorsePower""191"
+		"MaxRPM""6500"
+		"MaxSpeed""70"
+		"MaxReverseSpeed""5"
+		"AutobrakeSpeedGain""1.1"
+		"AutobrakeSpeedFactor""3"
+		"Autotransmission""0"
+		"AxleRatio""3.9"
+
+		"Gear""4.0"
+
+		"ShiftUpRPM""5000"
+		"ShiftDownRPM""2500"
+
+
+
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"35"
+		"DegreesFast"						"25"
+		"DegreesBoost"						"5"
+		"FastDampen"						"1"
+		"SteeringExponent"					"0"
+		"SlowCarSpeed"						"15"
+		"FastCarSpeed"						"30"
+		"SlowSteeringRate"					"2"
+		"FastSteeringRate"					"1"
+		"SteeringRestRateSlow"				"3"
+		"SteeringRestRateFast"				"2"
+		"TurnThrottleReduceSlow"			"0.1"
+		"TurnThrottleReduceFast"			"0.25"
+		"BrakeSteeringRateFactor"			"2"
+		"ThrottleSteeringRestRateFactor"	"2"
+		"BoostSteeringRestRateFactor"		"1"
+		"BoostSteeringRateFactor"			"1"
+
+		"PowerSlideAccel"					"300"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"14.5"
+			"Inertia" "0.3"
+			"Mass"							"250"
+			"Damping"					"0.2"
+			"RotDamping"					"0.2"
+			"Material"					"phx_rubbertire2"
+			"SkidMaterial"					"phx_rubbertire2"
+			"BrakeMaterial"					"phx_rubbertire2"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"425"
+			"SpringDamping"					"10.7"
+			"StabilizerConstant"			"30.5"
+			"SpringDampingCompression"		"0.5"
+			"MaxBodyForce"					"250"
+		}
+		"TorqueFactor"						"0.7"
+		"BrakeFactor"						"0.5"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"7"
+			"Inertia" "0.4"
+			"Mass"							"250"
+			"Damping"					"0.3"
+			"RotDamping"					"0.0"
+			"Material"					"phx_rubbertire2"
+			"SkidMaterial"					"phx_rubbertire2"
+			"BrakeMaterial"					"phx_rubbertire2"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"250"
+			"SpringDamping"					"10.7"
+			"StabilizerConstant"			"30.5"
+			"SpringDampingCompression"		"0.5"
+			"MaxBodyForce"					"250"
+		}
+		"TorqueFactor"						"0.7"
+		"BrakeFactor"						"0.75"
+	}
+}
+
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.05"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.15"
+		"Speed_Approach_Factor"	"0.07"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.5"
+		"Speed_Approach_Factor"	"0.07"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.7"
+		"Speed_Approach_Factor"	"0.07"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"1.2"
+		"Speed_Approach_Factor"	"0.07"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"1.7"
+		"Speed_Approach_Factor"	"0.03"
+	}
+	"State"
+	{
+		"Name"		"SS_START_IDLE"
+		"Sound"		"vehicles/sgmcars/polbike/start.wav"
+		"Min_Time"	"0.9"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0"
+		"Sound"		"vehicles/sgmcars/polbike/first.wav"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1_RESUME"
+		"Sound"		"vehicles/sgmcars/polbike/first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3_RESUME"
+		"Sound"		"vehicles/sgmcars/polbike/third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3"
+		"Sound"		"vehicles/sgmcars/polbike/third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2"
+		"Sound"		"vehicles/sgmcars/polbike/second.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1"
+		"Sound"		"vehicles/sgmcars/polbike/first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN"
+		"Sound"		"vehicles/sgmcars/polbike/stop.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_IDLE"
+		"Sound"		"vehicles/sgmcars/polbike/idle.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_REVERSE"
+		"Sound"		"vehicles/sgmcars/polbike/rev.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN_WATER"
+		"Sound"		"atv_stall_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4_RESUME"
+		"Sound"		"vehicles/sgmcars/polbike/fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN"
+		"Sound"		"vehicles/sgmcars/polbike/idle.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_TURBO"
+		"Sound"		"vehicles/sgmcars/polbike/fourth_cruise.wav"
+		"Min_Time"	"2.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0_RESUME"
+		"Sound"		"vehicles/sgmcars/polbike/first.wav"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"SS_START_WATER"
+		"Sound"		"atv_start_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2_RESUME"
+		"Sound"		"vehicles/sgmcars/polbike/second.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4"
+		"Sound"		"vehicles/sgmcars/polbike/fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN_HIGHSPEED"
+		"Sound"		"vehicles/sgmcars/polbike/throttle_off.wav"
+		"Min_Time"	"0"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+		"Gear_Limit"		"0"
+	}
+
+	"Skid_LowFriction"		"common/null.wav"
+	"Skid_NormalFriction"	"common/null.wav"
+	"Skid_HighFriction"		"common/null.wav"
+}

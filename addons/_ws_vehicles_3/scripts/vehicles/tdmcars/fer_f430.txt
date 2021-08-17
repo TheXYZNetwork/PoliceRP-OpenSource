@@ -1,0 +1,257 @@
+// fer_f430, created by TDM in 08/02/15 16:39:36, using Vehicle Controller (VCMod).
+
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"0.9"
+		"MassCenterOverride"	"0 0 4"
+		"MassOverride"			"1450"
+		"AddGravity"			"0.85"
+		"MaxAngularVelocity"	"420"
+	}
+	"Engine"
+	{
+		"HorsePower"			"483"
+		"MaxRPM"				"6600"
+		"MaxSpeed"				"114"
+		"MaxReverseSpeed"		"27"
+		"AutobrakeSpeedGain"	"1.1"
+		"AutobrakeSpeedFactor"	"6"
+		"Autotransmission"		"0"
+		"AxleRatio"				"7.2"
+		"Gear"					"4.8"
+
+		"ShiftUpRPM"			"3800"
+		"ShiftDownRPM"			"1600"
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"40"
+		"DegreesFast"						"7"
+		"DegreesBoost"						"11"
+		"FastDampen"						"150"
+		"SteeringExponent"					"1"
+		"SlowCarSpeed"						"2"
+		"FastCarSpeed"						"60"
+		"SlowSteeringRate"					"2.9"
+		"FastSteeringRate"					"1.8"
+		"SteeringRestRateSlow"				"2.9"
+		"SteeringRestRateFast"				"1.8"
+		"TurnThrottleReduceSlow"			"0.01"
+		"TurnThrottleReduceFast"			"0.6"
+		"BrakeSteeringRateFactor"			"1"
+		"ThrottleSteeringRestRateFactor"	"1.8"
+		"BoostSteeringRestRateFactor"		"1.8"
+		"BoostSteeringRateFactor"			"1.8"
+
+		"PowerSlideAccel"					"250"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"15.8"
+			"Mass"							"200"
+			"Inertia"						"0"
+			"Damping"						"0"
+			"RotDamping"					"0"
+			"Material"						"jeeptire"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"70"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"6.1"
+			"MaxBodyForce"					"100"
+		}
+		"TorqueFactor"						"0.05"
+		"BrakeFactor"						"0.55"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"17"
+			"Mass"							"210"
+			"Inertia"						"0"
+			"Damping"						"0"
+			"RotDamping"					"2.4"
+			"Material"						"jeeptire"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"60"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"6.1"
+			"MaxBodyForce"					"120"
+		}
+		"TorqueFactor"						"0.57"
+		"BrakeFactor"						"0.5"
+	}
+}
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.06"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.26"
+		"Speed_Approach_Factor"	"0.08"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.34"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.4"
+		"Speed_Approach_Factor"	"0.035"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"1"
+		"Speed_Approach_Factor"	"0.01"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN_WATER"
+		"Sound"		"atv_stall_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2_RESUME"
+		"Sound"		"vehicles\tdmcars\fer458\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_START_WATER"
+		"Sound"		"atv_start_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3_RESUME"
+		"Sound"		"vehicles\tdmcars\fer458\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_REVERSE"
+		"Sound"		"vehicles\tdmcars\fer458\rev.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_IDLE"
+		"Sound"		"vehicles\tdmcars\fer458\idle.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1_RESUME"
+		"Sound"		"vehicles\tdmcars\fer458\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4"
+		"Sound"		"vehicles\tdmcars\fer458\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1"
+		"Sound"		"vehicles\tdmcars\fer458\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN_HIGHSPEED"
+		"Sound"		"vehicles\tdmcars\fer458\throttle_off.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN"
+		"Sound"		"vehicles\tdmcars\slsamg\engineoff.mp3"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_START_IDLE"
+		"Sound"		"vehicles\tdmcars\fer_f430\enginestart.mp3"
+		"Min_Time"	"2"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4_RESUME"
+		"Sound"		"vehicles\tdmcars\fer458\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3"
+		"Sound"		"vehicles\tdmcars\fer458\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0_RESUME"
+		"Sound"		"vehicles\tdmcars\fer458\first.wav"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0"
+		"Sound"		"vehicles\tdmcars\fer458\idle.wav"
+		"Min_Time"	"0.08"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2"
+		"Sound"		"vehicles\tdmcars\fer458\second.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN"
+		"Sound"		"vehicles\tdmcars\fer458\idle.wav"
+		"Min_Time"	"0"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+		"Gear_Limit"		"0"
+	}
+
+	"Skid_LowFriction"		""
+	"Skid_NormalFriction"	""
+	"Skid_HighFriction"		""
+}

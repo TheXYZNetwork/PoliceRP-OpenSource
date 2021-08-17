@@ -1,0 +1,7 @@
+xLogs.RegisterCategory("Listings", "xStore")
+xLogs.RegisterCategory("Purchase", "xStore")
+xLogs.RegisterCategory("Custom Class", "xStore")
+xLogs.RegisterCategory("Whitelist", "xWhitelist")
+xLogs.RegisterCategory("Unwhitelist", "xWhitelist")
+xLogs.RegisterCategory("Blacklist", "xWhitelist")
+xLogs.RegisterCategory("Unblacklist", "xWhitelist")

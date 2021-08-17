@@ -1,0 +1,42 @@
+## Dirs
+downloadlists/*
+download/*
+data/*
+cache/*
+cfg/*
+bin/*
+html/*
+maps/*
+particles/*
+resource/*
+lua/*
+!lua/bin
+!lua/*/workshop.lua
+!lua/*/command_blocker.lua
+!cfg/*
+
+## Files
+console.log
+detail.vbsp
+
+## Formats
+**.mp3
+**.pcf
+**.wav
+**.png
+**.vtx
+**.phy
+**.mdl
+**.vtx
+**.vmt
+**.vvd
+**.vtf
+**.vpk
+**.rad
+**.vcd
+**.ver
+**.db
+**.cache
+**.pack
+**.image
+**.inf

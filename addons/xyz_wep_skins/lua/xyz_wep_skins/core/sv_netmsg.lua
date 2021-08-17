@@ -1,0 +1,5 @@
+util.AddNetworkString("WepSkin:Initial")
+util.AddNetworkString("WepSkin:OpenUI")
+util.AddNetworkString("WepSkin:BuySkin")
+util.AddNetworkString("WepSkin:Update")
+util.AddNetworkString("WepSkin:WorldModel")

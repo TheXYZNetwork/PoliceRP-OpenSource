@@ -1,0 +1,1 @@
+CustomizableWeaponry.quickGrenade:initializeQuickGrenade()

@@ -1,0 +1,1 @@
+CustomizableWeaponry:addFireSound("R8_FIRE", "weapons/REVOLVERZ/shot3.wav", 1, 125, CHAN_STATIC)

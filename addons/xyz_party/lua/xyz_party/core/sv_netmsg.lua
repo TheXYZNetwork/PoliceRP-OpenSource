@@ -1,0 +1,13 @@
+-- All the net messages defined here
+util.AddNetworkString("xyz_party_open")
+util.AddNetworkString("xyz_party_create")
+util.AddNetworkString("xyz_party_request")
+util.AddNetworkString("xyz_party_leave")
+util.AddNetworkString("xyz_party_kick")
+util.AddNetworkString("xyz_party_data")
+util.AddNetworkString("xyz_party_data_wipe")
+util.AddNetworkString("xyz_party_chat")
+util.AddNetworkString("xyz_party_ping_send")
+util.AddNetworkString("xyz_party_ping_broadcast")
+util.AddNetworkString("xyz_party_edit")
+util.AddNetworkString("xyz_party_edit_share")

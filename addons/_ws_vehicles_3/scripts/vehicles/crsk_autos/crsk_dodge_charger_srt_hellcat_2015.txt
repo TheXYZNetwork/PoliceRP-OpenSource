@@ -1,0 +1,262 @@
+// crsk_dodge_charger_srt_hellcat_2015, created by 𝓒𝓣𝓥 in Sun Jul 14 19:55:06 2019, using Vehicle Controller (VCMod).
+
+"Vehicle"
+{
+ "WheelsPerAxle" "2"
+ "Body"
+ {
+ "CounterTorqueFactor" "0.85"
+ "MassCenterOverride" "0 -10 2"
+ "MassOverride" "2082"
+ "AddGravity" "1.33"
+ "MaxAngularVelocity" "120"
+ }
+ "Engine"
+ {
+ "HorsePower" "707"
+ "MaxRPM" "4500"
+ "MaxSpeed" "155"
+ "MaxReverseSpeed" "25"
+ "AutobrakeSpeedGain" "1.1"
+ "AutobrakeSpeedFactor" "3"
+ "Autotransmission" "0"
+ "AxleRatio" "2.2"
+ "Gear" "4"
+
+ "ShiftUpRPM" "3000"
+ "ShiftDownRPM" "1500"
+ }
+ "Steering"
+ {
+ "DegreesSlow" "45"
+ "DegreesFast" "5"
+ "DegreesBoost" "11"
+ "FastDampen" "80"
+ "SteeringExponent" "0"
+ "SlowCarSpeed" "35"
+ "FastCarSpeed" "60"
+ "SlowSteeringRate" "2"
+ "FastSteeringRate" "1"
+ "SteeringRestRateSlow" "3"
+ "SteeringRestRateFast" "2"
+ "TurnThrottleReduceSlow" "0.01"
+ "TurnThrottleReduceFast" "0.6"
+ "BrakeSteeringRateFactor" "2"
+ "ThrottleSteeringRestRateFactor" "2"
+ "BoostSteeringRestRateFactor" "1.7"
+ "BoostSteeringRateFactor" "1.7"
+
+ "PowerSlideAccel" "400"
+
+ "SkidAllowed" "1"
+ "DustCloud" "1"
+ }
+ "Axle"
+ {
+ "Wheel"
+ {
+ "Radius" "17.5"
+ "Mass" "450"
+ "Inertia" "0.3"
+ "Damping" "0.1"
+ "RotDamping" "0"
+ "Material" "phx_rubbertire2"
+ "SkidMaterial" "slidingrubbertire"
+ "BrakeMaterial" "brakingrubbertire"
+ }
+ "Suspension"
+ {
+ "SpringConstant" "125"
+ "SpringDamping" "8.7"
+ "StabilizerConstant" "0"
+ "SpringDampingCompression" "2.5"
+ "MaxBodyForce" "250"
+ }
+ "TorqueFactor" "0.5"
+ "BrakeFactor" "0.5"
+ }
+ "Axle"
+ {
+ "Wheel"
+ {
+ "Radius" "17.5"
+ "Mass" "450"
+ "Inertia" "0.4"
+ "Damping" "0.1"
+ "RotDamping" "0"
+ "Material" "phx_rubbertire2"
+ "SkidMaterial" "ice"
+ "BrakeMaterial" "brakingrubbertire"
+ }
+ "Suspension"
+ {
+ "SpringConstant" "140"
+ "SpringDamping" "8.7"
+ "StabilizerConstant" "0"
+ "SpringDampingCompression" "2.5"
+ "MaxBodyForce" "250"
+ }
+ "TorqueFactor" "1.1"
+ "BrakeFactor" "0.75"
+ }
+}
+
+"Vehicle_Sounds"
+{
+ "Gear"
+ {
+ "Max_Speed" "0.02"
+ "Speed_Approach_Factor" "1"
+ }
+ "Gear"
+ {
+ "Max_Speed" "0.2"
+ "Speed_Approach_Factor" "0.085"
+ }
+ "Gear"
+ {
+ "Max_Speed" "0.38"
+ "Speed_Approach_Factor" "0.05"
+ }
+ "Gear"
+ {
+ "Max_Speed" "0.71"
+ "Speed_Approach_Factor" "0.035"
+ }
+ "Gear"
+ {
+ "Max_Speed" "0.75"
+ "Speed_Approach_Factor" "0.02"
+ }
+ "Gear"
+ {
+ "Max_Speed" "1.7"
+ "Speed_Approach_Factor" "0.01"
+ }
+ "State"
+ {
+ "Name" "SS_SHUTDOWN_WATER"
+ "Sound" "atv_stall_in_water"
+ "Min_Time" "0"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_2_RESUME"
+ "Sound" "vehicles/crskautos/srt_hellcat/second.wav"
+ "Min_Time" "0.5"
+ }
+ "State"
+ {
+ "Name" "SS_START_WATER"
+ "Sound" "atv_start_in_water"
+ "Min_Time" "0"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_3_RESUME"
+ "Sound" "vehicles/crskautos/srt_hellcat/third.wav"
+ "Min_Time" "0.5"
+ }
+ "State"
+ {
+ "Name" "SS_REVERSE"
+ "Sound" "vehicles/crskautos/srt_hellcat/rev.wav"
+ "Min_Time" "0.5"
+ }
+ "State"
+ {
+ "Name" "SS_IDLE"
+ "Sound" "vehicles/crskautos/srt_hellcat/idle.wav"
+ "Min_Time" "0"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_1_RESUME"
+ "Sound" "vehicles/crskautos/srt_hellcat/first.wav"
+ "Min_Time" "0.5"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_4"
+ "Sound" "vehicles/crskautos/srt_hellcat/fourth_cruise.wav"
+ "Min_Time" "0.5"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_1"
+ "Sound" "vehicles/crskautos/srt_hellcat/first.wav"
+ "Min_Time" "0.5"
+ }
+ "State"
+ {
+ "Name" "SS_SLOWDOWN_HIGHSPEED"
+ "Sound" "vehicles/crskautos/srt_hellcat/throttle_off.wav"
+ "Min_Time" "0"
+ }
+ "State"
+ {
+ "Name" "SS_TURBO"
+ "Sound" "vehicles/sgmcars/15gt_new/fourth_cruise.wav"
+ "Min_Time" "2.5"
+ }
+ "State"
+ {
+ "Name" "SS_START_IDLE"
+ "Sound" "vehicles/crskautos/srt_hellcat/startup.wav"
+ "Min_Time" "1.7"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_4_RESUME"
+ "Sound" "vehicles/crskautos/srt_hellcat/fourth_cruise.wav"
+ "Min_Time" "0.5"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_3"
+ "Sound" "vehicles/crskautos/srt_hellcat/third.wav"
+ "Min_Time" "0.5"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_0_RESUME"
+ "Sound" "vehicles/crskautos/srt_hellcat/first.wav"
+ "Min_Time" "0.75"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_0"
+ "Sound" "vehicles/crskautos/srt_hellcat/first.wav"
+ "Min_Time" "0.75"
+ }
+ "State"
+ {
+ "Name" "SS_GEAR_2"
+ "Sound" "vehicles/crskautos/srt_hellcat/second.wav"
+ "Min_Time" "0.5"
+ }
+ "State"
+ {
+ "Name" "SS_SLOWDOWN"
+ "Sound" "vehicles/crskautos/srt_hellcat/idle.wav"
+ "Min_Time" "0"
+ }
+ "CrashSound"
+ {
+ "Min_Speed" "350"
+ "Min_Speed_Change" "250"
+ "Sound" "atv_impact_medium"
+ "Gear_Limit" "1"
+ }
+ "CrashSound"
+ {
+ "Min_Speed" "450"
+ "Min_Speed_Change" "350"
+ "Sound" "atv_impact_heavy"
+ "Gear_Limit" "0"
+ }
+
+ "Skid_LowFriction" "common/null.wav"
+ "Skid_NormalFriction" "common/null.wav"
+ "Skid_HighFriction" "common/null.wav"
+}

@@ -1,0 +1,268 @@
+//STEELEMAN CUSTOMZ
+
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"1.1"
+		"MassCenterOverride"	"0 0 6"
+		"MassOverride"			"1750"
+		"AddGravity"			"1.0"
+		"MaxAngularVelocity"	"420"
+	}
+	"Engine"
+	{
+		"HorsePower"			"350"
+		"MaxRPM"				"5000"
+		"MaxSpeed"				"80"
+		"MaxReverseSpeed"		"30"
+		"AutobrakeSpeedGain"	"1.1"
+		"AutobrakeSpeedFactor"	"6"
+		"Autotransmission"		"0"
+		"AxleRatio"				"3"
+		"Gear"					"3"
+
+		"ShiftUpRPM"			"4000"
+		"ShiftDownRPM"			"1500"
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"35"
+		"DegreesFast"						"9"
+		"DegreesBoost"						"11"
+		"FastDampen"						"3"
+		"SteeringExponent"					"0"
+		"SlowCarSpeed"						"2"
+		"FastCarSpeed"						"60"
+		"SlowSteeringRate"					"2.5"
+		"FastSteeringRate"					"2.5"
+		"SteeringRestRateSlow"				"2.9"
+		"SteeringRestRateFast"				"1.8"
+		"TurnThrottleReduceSlow"			"0.01"
+		"TurnThrottleReduceFast"			"0.3"
+		"BrakeSteeringRateFactor"			"1.2"
+		"ThrottleSteeringRestRateFactor"	"1.8"
+		"BoostSteeringRestRateFactor"		"1.8"
+		"BoostSteeringRateFactor"			"1.8"
+
+		"PowerSlideAccel"					"250"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"6.75"
+			"Mass"							"400"
+			"Inertia"						"0"
+			"Damping"						"0"
+			"RotDamping"					"0"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"75"
+			"SpringDamping"					"1.5"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"4"
+			"MaxBodyForce"					"80"
+		}
+		"TorqueFactor"						".12"
+		"BrakeFactor"						"0.7"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"6.75"
+			"Mass"							"350"
+			"Inertia"						"0"
+			"Damping"						"0.17"
+			"RotDamping"					"0.99"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"95"
+			"SpringDamping"					"1.5"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"4"
+			"MaxBodyForce"					"150"
+		}
+		"TorqueFactor"						"0.6"
+		"BrakeFactor"						"0.55"
+	}
+}
+
+"vehicle_sounds"
+{
+	// List gears in order from lowest speed to highest speed
+
+	"gear"
+	{
+		"max_speed"		"0.27"
+		"speed_approach_factor" "1.0"
+	}
+
+	"gear"
+	{
+		"max_speed"		"0.5"
+		"speed_approach_factor" "0.05"
+	}
+	"gear"
+	{
+		"max_speed"		"0.75"
+		"speed_approach_factor" "0.052"
+	}
+	"gear"
+	{
+		"max_speed"		"0.95"
+		"speed_approach_factor" "0.034"
+	}
+	"gear"
+	{
+		"max_speed"		"1.5"
+		"speed_approach_factor" "0.033"
+	}
+	"gear"
+	{
+		"max_speed"		"2.0"
+		"speed_approach_factor" "0.03"
+	}
+	"state"
+	{
+		"name"		"SS_START_WATER"
+		"sound"		"ATV_start_in_water"
+	}
+
+	"state"
+	{
+		"name"		"SS_START_IDLE"
+		"sound"		"ATV_engine_start"
+		"min_time"	"4.0"
+	}
+	"state"
+	{
+		"name"		"SS_SHUTDOWN_WATER"
+		"sound"		"ATV_stall_in_water"
+	}
+	"state"
+	{
+		"name"		"SS_IDLE"
+		"sound"		"ATV_engine_idle"
+	}
+	"state"
+	{
+		"name"		"SS_REVERSE"
+		"sound"		"ATV_reverse"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_0"
+		"sound"		"ATV_rev"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_0_RESUME"
+		"sound"		"ATV_engine_idle"
+		"min_time"	"0.75"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_1"
+		"sound"		"ATV_firstgear"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_1_RESUME"
+		"sound"		"ATV_firstgear_noshift"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_2"
+		"sound"		"ATV_secondgear"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_2_RESUME"
+		"sound"		"ATV_secondgear_noshift"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_3"
+		"sound"		"ATV_thirdgear"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_3_RESUME"
+		"sound"		"ATV_thirdgear_noshift"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_4"
+		"sound"		"ATV_fourthgear"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_GEAR_4_RESUME"
+		"sound"		"ATV_fourthgear_noshift"
+		"min_time"	"0.5"
+	}
+	"state"
+	{
+		"name"		"SS_SLOWDOWN_HIGHSPEED"
+		"sound"		"ATV_throttleoff_fastspeed"
+		"min_time"	"2.0"
+	}
+	"state"
+	{
+		"name"		"SS_SLOWDOWN"
+		"sound"		"ATV_throttleoff_slowspeed"
+		"min_time"	"2.0"
+	}
+	"state"
+	{
+		"name"		"SS_TURBO"
+		"sound"		"ATV_turbo_on"
+		"min_time"	"2.5"
+	}
+	"state"
+	{
+		"name"		"SS_SHUTDOWN"
+		"sound"		"ATV_engine_stop"
+	}
+	"crashsound"
+	{
+		"min_speed"			"350"
+		"min_speed_change"	"250"
+		"sound"				"ATV_impact_medium"
+		"gear_limit"		"1"
+	}
+	"crashsound"
+	{
+		"min_speed"			"450"
+		"min_speed_change"	"350"
+		"sound"				"ATV_impact_heavy"
+	}
+
+	
+	"skid_lowfriction"		"ATV_skid_lowfriction"
+	"skid_normalfriction"		"ATV_skid_normalfriction"
+	"skid_highfriction"		"ATV_skid_highfriction"
+}

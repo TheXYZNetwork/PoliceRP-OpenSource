@@ -1,0 +1,153 @@
+// cartrailer, created by TDM in 01/23/14 23:19:37, using Vehicle Controller (VCMod).
+
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"0"
+		"MassCenterOverride"	"0 -30 7"
+		"MassOverride"			"500"
+		"AddGravity"			"0.3"
+		"MaxAngularVelocity"	"0"
+	}
+	"Engine"
+	{
+		"HorsePower"			"0"
+		"MaxRPM"				"4200"
+		"MaxSpeed"				"200"
+		"MaxReverseSpeed"		"100"
+		"AutobrakeSpeedGain"	"0"
+		"AutobrakeSpeedFactor"	"0"
+		"Autotransmission"		"0"
+		"AxleRatio"				"4.56"
+		"Gear"					"3.2"
+		"Gear"					"2.4"
+		"Gear"					"1.5"
+		"Gear"					"1"
+		"Gear"					"0.84"
+
+		"ShiftUpRPM"			"3800"
+		"ShiftDownRPM"			"1600"
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"40"
+		"DegreesFast"						"13"
+		"DegreesBoost"						"11"
+		"FastDampen"						"0"
+		"SteeringExponent"					"1.4"
+		"SlowCarSpeed"						"14"
+		"FastCarSpeed"						"60"
+		"SlowSteeringRate"					"3"
+		"FastSteeringRate"					"2"
+		"SteeringRestRateSlow"				"3"
+		"SteeringRestRateFast"				"2"
+		"TurnThrottleReduceSlow"			"0.01"
+		"TurnThrottleReduceFast"			"0.6"
+		"BrakeSteeringRateFactor"			"3"
+		"ThrottleSteeringRestRateFactor"	"2"
+		"BoostSteeringRestRateFactor"		"1.7"
+		"BoostSteeringRateFactor"			"1.7"
+
+		"PowerSlideAccel"					"250"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"13.5"
+			"Mass"							"500"
+			"Inertia"						"0"
+			"Damping"						"0"
+			"RotDamping"					"0"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"75"
+			"SpringDamping"					"2"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"2.5"
+			"MaxBodyForce"					"200"
+		}
+		"TorqueFactor"						"0"
+		"BrakeFactor"						"0.4"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"1"
+			"Mass"							"1"
+			"Inertia"						"0"
+			"Damping"						"0"
+			"RotDamping"					"0"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"0"
+			"SpringDamping"					"0"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"0"
+			"MaxBodyForce"					"0"
+		}
+		"TorqueFactor"						"0"
+		"BrakeFactor"						"0.6"
+	}
+}
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.06"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.25"
+		"Speed_Approach_Factor"	"0.08"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.35"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.55"
+		"Speed_Approach_Factor"	"0.035"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"1"
+		"Speed_Approach_Factor"	"0.01"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+		"Gear_Limit"		"0"
+	}
+
+	"Skid_LowFriction"		""
+	"Skid_NormalFriction"	""
+	"Skid_HighFriction"		""
+}

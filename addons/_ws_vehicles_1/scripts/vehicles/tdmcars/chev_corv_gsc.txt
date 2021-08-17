@@ -1,0 +1,257 @@
+// chev_corv_gsc, created by TDM in 04/10/15 17:46:47, using Vehicle Controller (VCMod).
+
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"0.9"
+		"MassCenterOverride"	"0 -10 3"
+		"MassOverride"			"1534"
+		"AddGravity"			"0.8"
+		"MaxAngularVelocity"	"420"
+	}
+	"Engine"
+	{
+		"HorsePower"			"436"
+		"MaxRPM"				"5500"
+		"MaxSpeed"				"108"
+		"MaxReverseSpeed"		"29"
+		"AutobrakeSpeedGain"	"1.1"
+		"AutobrakeSpeedFactor"	"6"
+		"Autotransmission"		"0"
+		"AxleRatio"				"6.9"
+		"Gear"					"4.2"
+
+		"ShiftUpRPM"			"3800"
+		"ShiftDownRPM"			"1600"
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"40"
+		"DegreesFast"						"7"
+		"DegreesBoost"						"11"
+		"FastDampen"						"130"
+		"SteeringExponent"					"0"
+		"SlowCarSpeed"						"2"
+		"FastCarSpeed"						"60"
+		"SlowSteeringRate"					"2.9"
+		"FastSteeringRate"					"1.7"
+		"SteeringRestRateSlow"				"2.9"
+		"SteeringRestRateFast"				"1.7"
+		"TurnThrottleReduceSlow"			"0.01"
+		"TurnThrottleReduceFast"			"0.6"
+		"BrakeSteeringRateFactor"			"1"
+		"ThrottleSteeringRestRateFactor"	"1.7"
+		"BoostSteeringRestRateFactor"		"1.7"
+		"BoostSteeringRateFactor"			"1.8"
+
+		"PowerSlideAccel"					"250"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"16"
+			"Mass"							"260"
+			"Inertia"						"-3"
+			"Damping"						"0"
+			"RotDamping"					"0"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"55"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"5"
+			"MaxBodyForce"					"100"
+		}
+		"TorqueFactor"						"0.02"
+		"BrakeFactor"						"0.63"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"17"
+			"Mass"							"250"
+			"Inertia"						"-2"
+			"Damping"						"0.2"
+			"RotDamping"					"0.9"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"90"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"5"
+			"MaxBodyForce"					"120"
+		}
+		"TorqueFactor"						"0.62"
+		"BrakeFactor"						"0.55"
+	}
+}
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.06"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.27"
+		"Speed_Approach_Factor"	"0.08"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.43"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.57"
+		"Speed_Approach_Factor"	"0.035"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"1"
+		"Speed_Approach_Factor"	"0.01"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN_WATER"
+		"Sound"		"atv_stall_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2_RESUME"
+		"Sound"		"vehicles\tdmcars\zenvo\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_START_WATER"
+		"Sound"		"atv_start_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3_RESUME"
+		"Sound"		"vehicles\tdmcars\zenvo\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_REVERSE"
+		"Sound"		"vehicles\tdmcars\zenvo\rev.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_IDLE"
+		"Sound"		"vehicles\tdmcars\zenvo\idle.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1_RESUME"
+		"Sound"		"vehicles\tdmcars\zenvo\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4"
+		"Sound"		"vehicles\tdmcars\zenvo\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1"
+		"Sound"		"vehicles\tdmcars\zenvo\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN_HIGHSPEED"
+		"Sound"		"vehicles\tdmcars\zenvo\throttle_off.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN"
+		"Sound"		"vehicles\tdmcars\slsamg\engineoff.mp3"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_START_IDLE"
+		"Sound"		"vehicles\tdmcars\charger2012\enginestart.mp3"
+		"Min_Time"	"2"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4_RESUME"
+		"Sound"		"vehicles\tdmcars\zenvo\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3"
+		"Sound"		"vehicles\tdmcars\zenvo\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0_RESUME"
+		"Sound"		"vehicles\tdmcars\zenvo\first.wav"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0"
+		"Sound"		"vehicles\tdmcars\zenvo\idle.wav"
+		"Min_Time"	"0.08"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2"
+		"Sound"		"vehicles\tdmcars\zenvo\second.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN"
+		"Sound"		"vehicles\tdmcars\zenvo\idle.wav"
+		"Min_Time"	"0"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+		"Gear_Limit"		"0"
+	}
+
+	"Skid_LowFriction"		""
+	"Skid_NormalFriction"	""
+	"Skid_HighFriction"		""
+}

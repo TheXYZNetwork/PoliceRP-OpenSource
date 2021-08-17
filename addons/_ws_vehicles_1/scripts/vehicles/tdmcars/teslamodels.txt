@@ -1,0 +1,187 @@
+// teslamodels, created by TDM in 03/04/14 17:12:13, using Vehicle Controller (VCMod).
+
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"0.9"
+		"MassCenterOverride"	"0 -3 2"
+		"MassOverride"			"1442"
+		"AddGravity"			"0.5"
+		"MaxAngularVelocity"	"720"
+	}
+	"Engine"
+	{
+		"HorsePower"			"416"
+		"MaxRPM"				"4000"
+		"MaxSpeed"				"100"
+		"MaxReverseSpeed"		"87"
+		"AutobrakeSpeedGain"	"0"
+		"AutobrakeSpeedFactor"	"0"
+		"Autotransmission"		"0"
+		"AxleRatio"				"7"
+		"Gear"					"3.2"
+
+		"ShiftUpRPM"			"3800"
+		"ShiftDownRPM"			"1600"
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"40"
+		"DegreesFast"						"13"
+		"DegreesBoost"						"11"
+		"FastDampen"						"80"
+		"SteeringExponent"					"0"
+		"SlowCarSpeed"						"14"
+		"FastCarSpeed"						"60"
+		"SlowSteeringRate"					"3"
+		"FastSteeringRate"					"2"
+		"SteeringRestRateSlow"				"3"
+		"SteeringRestRateFast"				"2"
+		"TurnThrottleReduceSlow"			"0.01"
+		"TurnThrottleReduceFast"			"0.6"
+		"BrakeSteeringRateFactor"			"3"
+		"ThrottleSteeringRestRateFactor"	"2"
+		"BoostSteeringRestRateFactor"		"1.7"
+		"BoostSteeringRateFactor"			"1.7"
+
+		"PowerSlideAccel"					"250"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"17"
+			"Mass"							"125"
+			"Inertia"						"1.5"
+			"Damping"						"0"
+			"RotDamping"					"0"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"70"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"7"
+			"MaxBodyForce"					"28"
+		}
+		"TorqueFactor"						"0"
+		"BrakeFactor"						"0.65"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"17"
+			"Mass"							"400"
+			"Inertia"						"1.5"
+			"Damping"						"0.1"
+			"RotDamping"					"0.9"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"75"
+			"SpringDamping"					"1"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"7"
+			"MaxBodyForce"					"30"
+		}
+		"TorqueFactor"						"0.8"
+		"BrakeFactor"						"0.65"
+	}
+}
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.01"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.95"
+		"Speed_Approach_Factor"	"0.01"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"1.1"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2_RESUME"
+		"Sound"		"vehicles\tdmcars\teslamodels\midthrottle.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_REVERSE"
+		"Sound"		"vehicles\tdmcars\teslamodels\full.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1_RESUME"
+		"Sound"		"vehicles\tdmcars\teslamodels\full.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1"
+		"Sound"		"vehicles\tdmcars\teslamodels\full.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN_HIGHSPEED"
+		"Sound"		"vehicles\tdmcars\teslamodels\throttle_off.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN"
+		"Sound"		"vehicles\tdmcars\teslamodels\engineoff.mp3"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_START_IDLE"
+		"Sound"		"vehicles\tdmcars\teslamodels\enginestart.mp3"
+		"Min_Time"	"3"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2"
+		"Sound"		"vehicles\tdmcars\teslamodels\midthrottle.wav"
+		"Min_Time"	"0.5"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+		"Gear_Limit"		"0"
+	}
+
+	"Skid_LowFriction"		""
+	"Skid_NormalFriction"	""
+	"Skid_HighFriction"		""
+}

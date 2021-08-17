@@ -1,0 +1,10 @@
+CustomizableWeaponry:addFireSound("KHRCZ_FIRE", "weapons/khrcz52/m9_fp.wav", 1, 125, CHAN_STATIC)
+CustomizableWeaponry:addFireSound("KHRCZ_FIRE_SUPPRESSED", "weapons/khrcz52/m9_suppressed_fp.wav", 1, 60, CHAN_STATIC)
+
+CustomizableWeaponry:addReloadSound("KHRMAK_BOLTBACK", "weapons/khrmakarov/makarov_boltback.wav")
+CustomizableWeaponry:addReloadSound("KHRMAK_BOLTRELEASE", "weapons/khrmakarov/makarov_boltrelease.wav")
+CustomizableWeaponry:addReloadSound("KHRMAK_MAGHIT", "weapons/khrmakarov/makarov_maghit.wav")
+CustomizableWeaponry:addReloadSound("KHRMAK_MAGIN", "weapons/khrmakarov/makarov_magin.wav")
+CustomizableWeaponry:addReloadSound("KHRMAK_MAGOUT", "weapons/khrmakarov/makarov_magout.wav")
+CustomizableWeaponry:addReloadSound("KHRMAK_MAGRELEASE", "weapons/khrmakarov/makarov_magrelease.wav")
+CustomizableWeaponry:addReloadSound("KHRMAK_SAFETY", "weapons/khrmakarov/makarov_safety.wav")

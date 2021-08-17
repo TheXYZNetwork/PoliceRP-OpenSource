@@ -1,0 +1,6 @@
+util.AddNetworkString("CashRegister:UI")
+util.AddNetworkString("CashRegister:Action:Withdraw")
+util.AddNetworkString("CashRegister:Action:Sell")
+util.AddNetworkString("CashRegister:Action:Purchase")
+util.AddNetworkString("CashRegister:Action:Delist")
+util.AddNetworkString("CashRegister:Confirm:Purchase")
