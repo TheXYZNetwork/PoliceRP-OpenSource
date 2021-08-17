@@ -24,8 +24,7 @@ CREATE TABLE `auction_active_listings` (
  `ended` int(1) DEFAULT NULL,
  `created` int(255) NOT NULL,
  PRIMARY KEY (`id`),
- KEY `current_bid` (`current_bid`),
- CONSTRAINT `auction_active_listings_ibfk_1` FOREIGN KEY (`current_bid`) REFERENCES `auction_bids` (`id`)
+ KEY `current_bid` (`current_bid`)
 ) 
 ```
 ```
