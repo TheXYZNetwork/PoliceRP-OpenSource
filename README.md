@@ -304,3 +304,18 @@ CREATE TABLE `wep_skins` (
  UNIQUE KEY `unique_index` (`userid`,`wep`)
 )
 ```
+## Christmas Content
+```
+CREATE TABLE `christmas_credits` (
+ `userid` varchar(32) NOT NULL,
+ `credits` int(11) DEFAULT NULL,
+ PRIMARY KEY (`userid`)
+) 
+```
+```
+CREATE TABLE `advent_doors` (
+ `userid` varchar(32) NOT NULL,
+ `door` int(11) DEFAULT NULL,
+ `reward` varchar(32) NOT NULL
+)
+```
