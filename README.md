@@ -318,3 +318,22 @@ CREATE TABLE `advent_doors` (
  `reward` varchar(32) NOT NULL
 )
 ```
+## xStore extra
+### The server specific xStore tables are auto generated, but these need to be manually made
+```
+CREATE TABLE `credits` (
+ `userid` varchar(32) NOT NULL,
+ `credits` int(11) NOT NULL,
+ PRIMARY KEY (`userid`)
+)
+```
+```
+CREATE TABLE `credit_logs` (
+ `userid` varchar(32) NOT NULL,
+ `type` varchar(32) NOT NULL,
+ `creditchange` int(11) NOT NULL,
+ `cost` int(11) NOT NULL,
+ `netcredits` int(11) NOT NULL,
+ `date` varchar(32) NOT NULL
+)
+```
