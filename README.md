@@ -4,6 +4,20 @@ This is a reupload of the main PoliceRP server. The reason we didn't make the or
 # What is included?
 Included is the entire policerp server with any paid addons removed. Any public addons used are still in the repo. For the most part, you should be able to just load the server if you create the right database connections and manually create the tables for the required addons
 
+# The following paids addons were originally used
+- [Ballistic Shields](https://www.gmodstore.com/market/view/6547)
+- [bComms](https://www.gmodstore.com/market/view/bcomms-radio-bind-wheel-respondents)
+- [Weapon HUD](https://www.gmodstore.com/market/view/weapon-hud-replacement)
+- [LeyScreencap](https://www.gmodstore.com/market/view/leyscreencap-web-interface-screenshot-livestream)
+- [pCasino](https://www.gmodstore.com/market/view/pcasino-the-perfect-casino-addon-roulette-blackjack-slots-prize-wheel)
+- [pVault](https://www.gmodstore.com/market/view/pvault-the-perfect-bank-raid-heist-addon-masks)
+- [Raid Hook](https://www.gmodstore.com/market/view/raid-hook)
+- [Tier Printers](https://www.gmodstore.com/market/view/tier-printers-the-1-money-printer-system)
+- [uWeed](https://www.gmodstore.com/market/view/uweed-advanced-cannabis-growth-drug)
+- [uWeed Extended](https://www.gmodstore.com/market/view/uweed-extended-edibles-dlc)
+- [VCMod](https://www.gmodstore.com/market/view/vcmod-main)
+- [VCMod ELS](https://www.gmodstore.com/market/view/vcmod-els)
+
 # Table creation statements
 
 ## Auction House
