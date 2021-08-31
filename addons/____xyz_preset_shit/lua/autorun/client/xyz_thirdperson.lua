@@ -36,7 +36,6 @@ hook.Add("CalcView", "XYZ3rdPersonCamera", function(ply, origin, angles, fov, zn
     traceData.endpos = view.origin
     traceData.filter = ply
     local trace = util.TraceLine(traceData)
-    pos = trace.HitPos
 
     if (trace.Fraction < 1) or (not LocalPlayer():IsLineOfSightClear(view.origin)) then
         view.origin = origin - (dis * trace.Fraction)
