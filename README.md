@@ -4,6 +4,8 @@ This is a reupload of the main PoliceRP server. The reason we didn't make the or
 # What is included?
 Included is the entire policerp server with any paid addons removed. Any public addons used are still in the repo. For the most part, you should be able to just load the server if you create the right database connections and manually create the tables for the required addons
 
+THERE ARE ALSO ADDONS THAT WERE CONNECTED AS SUB MODULES, YOU CAN FIND THEM [HERE](https://github.com/TheXYZNetwork/PoliceRP-OpenSource/blob/master/.gitmodules).
+
 # Where can I find the hotload assets?
 All the hotload assets can be found [here](https://i.notgyazo.club/hd466jWGQ.zip) in the exact same structure as the [hotloader](https://github.com/TheXYZNetwork/PoliceRP-OpenSource/blob/master/addons/____xyz_preset_shit/lua/autorun/client/____xyz_image_hotloader.lua) loads them. You can reupload these assets and change the domain.
 
